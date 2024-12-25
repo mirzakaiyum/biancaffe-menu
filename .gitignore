@@ -29,10 +29,10 @@ yarn-error.log*
 # local env files
 .env*.local
 .txt
-.zip
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+*.zip
