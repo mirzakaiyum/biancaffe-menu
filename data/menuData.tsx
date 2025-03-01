@@ -5,11 +5,27 @@ interface MenuItem {
 
 interface MenuSection {
   name: string;
+  subtext?: string;
   slug: string;
   categories: Record<string, MenuItem>;
 }
 
 export const menuData: Record<string, MenuSection> = {
+  ramadan: {
+    name: "Ramadan Platter",
+    subtext: "Available for both iftar and sehri",
+    slug: "ramadan-platter",
+    categories: {
+      platter1: {
+        name: "Platter for 1",
+        slug: "platter-for-1",
+      },
+      platter2: {
+        name: "Platter for 2",
+        slug: "platter-for-2",
+      },
+    }
+  },
   bistro: {
     name: "Bistro",
     slug: "bistro",
@@ -99,5 +115,6 @@ export const menuData: Record<string, MenuSection> = {
         slug: "muffin-and-more",
       },
     }
-  }
+  },
+
 };
